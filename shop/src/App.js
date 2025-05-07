@@ -7,7 +7,7 @@ function App() {
   const[products,setProducts]=useState(data);
     
   
-return <div className='shoppin'>{products.map((item)=><Card  name={item.name} brand={item.brand}  price={item.price} originalPrice={item.originalPrice} discountPercentage={item.discountPercentage} imageUrl={item.imageUrl}/>)}</div>
+return <div className='shoppin'>{products.map((item)=><Card setData={setProducts} name={item.name} brand={item.brand}  price={item.price} originalPrice={item.originalPrice} discountPercentage={item.discountPercentage} imageUrl={item.imageUrl}/>)}</div>
            
 
 }

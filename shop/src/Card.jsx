@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion';
 
-const Card = ({  name, brand, price, originalPrice, discountPercentage, imageUrl }) => {
+const Card = ({  setData,name, brand, price, originalPrice, discountPercentage, imageUrl }) => {
   
   const handleSwipe = (direction) => {
     if (direction === "right") {
+      setData((prevData) => prevData.slice(0, -1)); 
       console.log("Swiped right");
     } else if (direction === "left") {
+      setData((prevData) => prevData.slice(0, -1)); 
+
       console.log("Swiped left");
     }
   };
