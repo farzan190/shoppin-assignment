@@ -18,13 +18,11 @@ img{
   border-radius: 6px;
   margin-bottom: 10px;
   padding-top: 10px;
-  position: absolute;
   margin-top: 550px;
 }
 .shoppin{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
