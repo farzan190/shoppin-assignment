@@ -16,7 +16,7 @@ const Card = ({  setData,name, brand, price, originalPrice, discountPercentage, 
   return (
     <motion.div
       drag="x"
-      dragConstraints={{ left: -30, right: 30 }}  
+      dragConstraints={{ left: -0, right: 0 }}  
       onDragEnd={(e, info) => {
         if (info.offset.x > 100) handleSwipe("right");
         else if (info.offset.x < -100) handleSwipe("left");
