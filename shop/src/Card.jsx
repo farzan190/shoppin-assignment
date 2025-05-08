@@ -46,6 +46,7 @@ const Card = ({  setData,name, brand, price, originalPrice, discountPercentage, 
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        touchAction: 'none',
       }}
     >  <div className='card'>
       <img src={imageUrl} alt={name} />

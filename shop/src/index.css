@@ -12,8 +12,8 @@ img{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70%;
-  width: 90%;
+  height: 50%;
+  width: 20%;
   border: 2px solid black;
   border-radius: 6px;
   margin-bottom: 10px;
@@ -25,4 +25,10 @@ img{
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+}
+@media (max-width: 768px) {
+  .card {
+  height: 60%;
+  width: 80%;
+  }
 }
